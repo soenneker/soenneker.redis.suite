@@ -39,7 +39,7 @@
 
         <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
 
-        <PackageReference Include="Soenneker.Redis.Lock" Version="1.0.156" />
+        <PackageReference Include="Soenneker.Redis.Lock" Version="1.0.159" />
 
         <PackageReference Include="Soenneker.Redis.Util.Server" Version="1.0.140" />
     </ItemGroup>
