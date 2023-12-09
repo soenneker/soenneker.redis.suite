@@ -41,6 +41,6 @@
 
         <PackageReference Include="Soenneker.Redis.Lock" Version="2.1.119" />
 
-        <PackageReference Include="Soenneker.Redis.Util.Server" Version="2.1.91" />
+        <PackageReference Include="Soenneker.Redis.Util.Server" Version="2.1.93" />
     </ItemGroup>
 </Project>
