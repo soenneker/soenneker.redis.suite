@@ -36,7 +36,7 @@
         <None Include="..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\LICENSE" Pack="true" PackagePath="\" />
         <None Include="..\icon.png" Pack="true" PackagePath="\" />
-        <PackageReference Include="Soenneker.Redis.Lock" Version="2.1.872" />
+        <PackageReference Include="Soenneker.Redis.Lock" Version="2.1.875" />
         <PackageReference Include="Soenneker.Redis.Util.Server" Version="2.1.666" />
     </ItemGroup>
 </Project>
