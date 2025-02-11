@@ -9,9 +9,10 @@ namespace Soenneker.Redis.Suite.Registrars;
 /// </summary>
 public static class RedisSuiteRegistrar
 {
-    public static void AddRedisSuiteAsSingleton(this IServiceCollection services)
+    public static IServiceCollection AddRedisSuiteAsSingleton(this IServiceCollection services)
     {
         services.AddRedisLockUtilAsSingleton();
         services.AddRedisServerUtilAsSingleton();
+        return services;
     }
 }
