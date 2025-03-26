@@ -11,8 +11,15 @@ public static class RedisSuiteRegistrar
 {
     public static IServiceCollection AddRedisSuiteAsSingleton(this IServiceCollection services)
     {
-        services.AddRedisLockUtilAsSingleton();
-        services.AddRedisServerUtilAsSingleton();
+        services.AddRedisLockUtilAsSingleton().AddRedisServerUtilAsSingleton();
+
+        return services;
+    }
+
+    public static IServiceCollection AddRedisSuiteAsScoped(this IServiceCollection services)
+    {
+        services.AddRedisLockUtilAsScoped().AddRedisServerUtilAsScoped();
+
         return services;
     }
 }
