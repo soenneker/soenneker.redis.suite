@@ -9,6 +9,11 @@ namespace Soenneker.Redis.Suite.Registrars;
 /// </summary>
 public static class RedisSuiteRegistrar
 {
+    /// <summary>
+    /// Adds redis suite as singleton.
+    /// </summary>
+    /// <param name="services">The service collection.</param>
+    /// <returns>The result of the operation.</returns>
     public static IServiceCollection AddRedisSuiteAsSingleton(this IServiceCollection services)
     {
         services.AddRedisLockUtilAsSingleton().AddRedisServerUtilAsSingleton();
@@ -16,6 +21,11 @@ public static class RedisSuiteRegistrar
         return services;
     }
 
+    /// <summary>
+    /// Adds redis suite as scoped.
+    /// </summary>
+    /// <param name="services">The service collection.</param>
+    /// <returns>The result of the operation.</returns>
     public static IServiceCollection AddRedisSuiteAsScoped(this IServiceCollection services)
     {
         services.AddRedisLockUtilAsScoped().AddRedisServerUtilAsScoped();
