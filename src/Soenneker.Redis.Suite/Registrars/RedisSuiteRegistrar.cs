@@ -10,10 +10,10 @@ namespace Soenneker.Redis.Suite.Registrars;
 public static class RedisSuiteRegistrar
 {
     /// <summary>
-    /// Adds redis suite as singleton.
+    /// Registers Redis Suite with a singleton lifetime.
     /// </summary>
-    /// <param name="services">The service collection.</param>
-    /// <returns>The result of the operation.</returns>
+    /// <param name="services">Service collection that receives the registration.</param>
+    /// <returns>The same service collection, so additional registrations can be chained.</returns>
     public static IServiceCollection AddRedisSuiteAsSingleton(this IServiceCollection services)
     {
         services.AddRedisLockUtilAsSingleton().AddRedisServerUtilAsSingleton();
@@ -22,10 +22,10 @@ public static class RedisSuiteRegistrar
     }
 
     /// <summary>
-    /// Adds redis suite as scoped.
+    /// Registers Redis Suite with a scoped lifetime.
     /// </summary>
-    /// <param name="services">The service collection.</param>
-    /// <returns>The result of the operation.</returns>
+    /// <param name="services">Service collection that receives the registration.</param>
+    /// <returns>The same service collection, so additional registrations can be chained.</returns>
     public static IServiceCollection AddRedisSuiteAsScoped(this IServiceCollection services)
     {
         services.AddRedisLockUtilAsScoped().AddRedisServerUtilAsScoped();
