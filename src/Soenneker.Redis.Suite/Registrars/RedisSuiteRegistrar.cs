@@ -5,12 +5,12 @@ using Soenneker.Redis.Util.Server.Registrars;
 namespace Soenneker.Redis.Suite.Registrars;
 
 /// <summary>
-/// A concoction of Redis utilities and libraries
+/// Registers the Redis value, server, and distributed-lock utilities as a group.
 /// </summary>
 public static class RedisSuiteRegistrar
 {
     /// <summary>
-    /// Registers Redis Suite with a singleton lifetime.
+    /// Registers all suite utilities with singleton lifetimes.
     /// </summary>
     /// <param name="services">Service collection that receives the registration.</param>
     /// <returns>The same service collection, so additional registrations can be chained.</returns>
@@ -22,7 +22,7 @@ public static class RedisSuiteRegistrar
     }
 
     /// <summary>
-    /// Registers Redis Suite with a scoped lifetime.
+    /// Registers all suite utility wrappers with scoped lifetimes.
     /// </summary>
     /// <param name="services">Service collection that receives the registration.</param>
     /// <returns>The same service collection, so additional registrations can be chained.</returns>
